@@ -44,10 +44,7 @@ nav{
     justify-content:space-evenly;
     width: 100vw;
     height: 10vh;
-    position: sticky;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
 nav p{
