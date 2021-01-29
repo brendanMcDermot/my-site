@@ -9,6 +9,7 @@ class Controller{
     }
 
     init(noOfActors, innerWidth, innerHeight, actorSpeed){
+        this.allMyActors = [];
         for (var i = 0; i < noOfActors; i++){
             var radius = Math.random() * 3 + 1;
             var x = Math.random() * (innerWidth - radius * 2) + radius;
