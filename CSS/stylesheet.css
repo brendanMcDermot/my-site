@@ -14,9 +14,7 @@ img{
     width: 100vw;
     height: 100vh;
     text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
+    
     color: white;
 }
 
@@ -40,6 +38,10 @@ h1, h2, p{
 
 canvas{
     background: linear-gradient(to left, rgba(0, 0, 50, 1), rgba(0, 1, 0, 1));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 nav{
