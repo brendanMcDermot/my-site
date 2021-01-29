@@ -13,7 +13,7 @@ var controller = new Controller(view, innerWidth, innerHeight, mouse);
 
 //size the canvas
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight / 1.8;
+canvas.height = window.innerHeight / 1.6;
 
 // event listeners
 window.addEventListener('mousemove', 
@@ -25,7 +25,7 @@ window.addEventListener('mousemove',
 // resizing the window (responsive)
 window.addEventListener('resize', function(){
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight / 1.8;
+    canvas.height = window.innerHeight / 1.6;
 
     controller.init(numberOfActors, innerWidth, innerHeight, actorSpeed);
 })
