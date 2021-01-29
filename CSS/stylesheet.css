@@ -22,7 +22,6 @@ img{
 
 #index_titleBox{
     width: 95%;
-    /* margin: 2.5%; */
     height: 40vh;
 }
 
@@ -30,13 +29,8 @@ h1{
     font-size: 3rem;
 }
 
-
 canvas{
     background: linear-gradient(to left, rgba(0, 0, 50, 1), rgba(0, 1, 0, 1));
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; */
 }
 
 nav{
@@ -44,9 +38,6 @@ nav{
     justify-content:space-evenly;
     width: 100vw;
     height: 10vh;
-    position: sticky;
-    top: 0;
-    left: 0;
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
 }
