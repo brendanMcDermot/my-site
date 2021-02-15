@@ -20,7 +20,8 @@ img{
 
 #index_titleBox{
     width: 95%;
-    height: 40vh;
+    height: 60vh;
+    padding: 20vh 2.5%;
 }
 
 h1{
@@ -49,8 +50,15 @@ nav{
     justify-content:space-evenly;
     width: 100vw;
     height: 10vh;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgb(0, 0, 0);
     color: white;
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 1rem 0rem 0rem 0rem;
+}
+.nav_Container{
+    text-align: center;
 }
 nav p{
     color: white;
@@ -65,13 +73,20 @@ a:link{
 
 #index_sumBox{
     background-color: rgba(200, 200, 200, 1);
-    height:40vh;
+    padding: 5vw 10vw;
 }
 #index_sumBox p{
     color:black;
+    padding: 1em;
 }
 #index_sumBox h2{
     color:black;
+    padding: 0.25em;
+}
+
+#pictureBox{
+    padding: 5vw;
+    border: 1px solid black;
 }
 
 footer{
@@ -84,7 +99,7 @@ footer{
 .footer_logoBox{
     display: flex;
     flex-direction: row;
-	width: 20rem;
+	width: 80%;
 	height: 2rem;
 }
 
