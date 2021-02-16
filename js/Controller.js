@@ -24,7 +24,7 @@ class Controller{
 
     init(innerWidth, innerHeight){
         if (this.innerWidth * this.innerHeight < 270000){
-            this.noOfActors = 500
+            this.noOfActors = 400
         }
         this.allMyActors = [];
         for (var i = 0; i < this.noOfActors; i++){
