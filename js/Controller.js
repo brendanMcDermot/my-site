@@ -36,6 +36,9 @@ class Controller{
             var colorG = blues[colorIndex][1]
             var colorB = blues[colorIndex][2]
             var colorA = blues[colorIndex][3]
+            if (this.innerWidth * this.innerHeight < 270000){
+                this.noOfActors = 500
+            }
 
             this.allMyActors.push(new Actor(x, y, dx, dy, radius, this.maxRadius, colorR, colorG, colorB, colorA, colorIndex))
         }
