@@ -39,7 +39,7 @@ h1, h2, p{
 
 canvas{
     background: linear-gradient(to left, rgba(0, 0, 50, 1), rgba(0, 1, 0, 1));
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: -1;
