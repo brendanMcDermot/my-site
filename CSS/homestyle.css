@@ -1,3 +1,25 @@
-h1{
-    color: red;
+
+#index_titlebox{
+    width: 95%;
+    height: 60vh;
+    padding: 20vh 2.5%;
+    color: azure;
+}
+
+#index_content{
+    color: aquamarine;
+}
+
+.index_panel{
+    background: linear-gradient(to left, rgba(20, 20, 20, 0.9), rgba(30, 30, 30, 0.9));
+    padding: 1rem;
+    margin: 2rem;
+}
+
+canvas{
+    background: linear-gradient(to left, rgba(0, 0, 50, 1), rgba(0, 1, 0, 1));
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
