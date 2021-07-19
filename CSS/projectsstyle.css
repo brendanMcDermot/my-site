@@ -24,12 +24,14 @@ h2, p{
     background-color: rgb(217, 228, 235);
     border: 5px solid rgb(31, 199, 134);
 }
+
 body{
-    background-image: url("../images/vscode.PNG"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 500px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    /* background-repeat: no-repeat; Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */   
+    background-image: url("../images/vscode.PNG"); 
+    background-color: #cccccc; 
+    height: 500px; 
+    background-position: center; 
 }
 
+footer > p{
+    color: white;
+}

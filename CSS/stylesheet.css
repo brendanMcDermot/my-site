@@ -24,10 +24,10 @@ h1{
 
 
 main{
-    justify-content: center;
+    /* justify-content: center; */
     width: 100vw;
-    height: 100vh;
-    text-align: center;
+    min-height: 90vh;
+    /* text-align: center; */
 }
 
 h1{
@@ -53,6 +53,10 @@ nav{
     color: white;
     padding: 1rem 0rem 0rem 0rem;
 }
+.nav2{
+    background-color: rgb(42, 51, 51);
+    height: 8vh;
+}
 .nav_Container{
     text-align: center;
 }
@@ -65,13 +69,11 @@ nav p{
     text-decoration: none;
     color: white;
 }
+
 a:link{
     text-decoration: none;
 }
-/* a:hover {
-    color: rgb(190, 236, 213);
-    background-color: rgb(192, 189, 192);
-} */
+
 .codestrip_header{
     background-image: url("../images/vscodestrip.PNG"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
@@ -123,6 +125,13 @@ footer{
       justify-content: space-evenly;
       flex-direction: column;
   }
+
+  #projects_titlebox, #game_titlebox, #websites_titlebox, #software_titlebox{
+    padding: 1rem;
+    margin: 1rem 5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: auto;
+}
 
   /* temporary... delete later */
   .temp_imgcontainer{
