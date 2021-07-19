@@ -9,6 +9,9 @@
 #index_content{
     color: aquamarine;
 }
+.index_panel > h2{
+    color: rgb(144, 144, 253);
+}
 
 .index_panel{
     background: linear-gradient(to left, rgba(20, 20, 20, 0.9), rgba(30, 30, 30, 0.9));

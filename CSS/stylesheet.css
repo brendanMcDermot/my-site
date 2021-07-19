@@ -25,7 +25,6 @@ main{
     width: 100vw;
     height: 100vh;
     text-align: center;
-    color: white;
 }
 
 h1{
@@ -63,8 +62,8 @@ nav p{
 a:link{
     text-decoration: none;
     color: white;
-    font-size: 0.8rem;
-    padding: 1rem;
+    /* font-size: 0.8rem;
+    padding: 1rem; */
 }
 
 footer{
@@ -86,3 +85,23 @@ footer{
     height: 1rem;
     margin: 1rem;
 }
+
+.btn_link {
+    display: block;
+    width: 120px;
+    height:3rem;
+    background: #4E9CAF;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 0.25rem;
+  
+  }
+
+  .flex_this{
+      display: flex;
+      justify-content: space-evenly;
+  }
