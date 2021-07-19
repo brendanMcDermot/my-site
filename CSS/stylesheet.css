@@ -136,6 +136,7 @@ footer{
   /* temporary... delete later */
   .temp_imgcontainer{
       width: 15rem;
+      display: flex;
   }
 
 
