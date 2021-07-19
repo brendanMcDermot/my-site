@@ -41,6 +41,7 @@ h1, h2, p{
 }
 
 nav{
+    border-bottom: 2px solid rgb(58, 58, 58);
     display: flex;
     justify-content:space-evenly;
     width: 100vw;
@@ -64,12 +65,21 @@ nav p{
 a:link{
     text-decoration: none;
 }
-a:hover {
+/* a:hover {
     color: rgb(190, 236, 213);
-    background-color: rgb(117, 116, 117);
+    background-color: rgb(192, 189, 192);
+} */
+.codestrip_header{
+    background-image: url("../images/vscodestrip.PNG"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 60px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */   
 }
 
 footer{
+    border-top: 2px solid rgb(58, 58, 58);
     color: white;
     background-color: black;
     height: 16vh;
