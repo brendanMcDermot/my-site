@@ -47,9 +47,6 @@ nav{
     height: 10vh;
     background-color: rgb(0, 0, 0);
     color: white;
-    position: absolute;
-    top: 0;
-    left:0;
     padding: 1rem 0rem 0rem 0rem;
 }
 .nav_Container{
@@ -59,14 +56,21 @@ nav p{
     color: white;
 }
 
-a:link{
+
+.nav_Container > a:link{
     text-decoration: none;
     color: white;
-    /* font-size: 0.8rem;
-    padding: 1rem; */
+}
+a:link{
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(190, 236, 213);
+    background-color: rgb(117, 116, 117);
 }
 
 footer{
+    color: white;
     background-color: black;
     height: 16vh;
     padding: 1rem 3rem;
@@ -104,4 +108,13 @@ footer{
   .flex_this{
       display: flex;
       justify-content: space-evenly;
+      flex-direction: column;
+  }
+
+
+  /* Media Querries */
+  @media only screen and (min-width: 600px) {
+    .flex_this {
+      flex-direction: row;
+    }
   }

@@ -1,9 +1,14 @@
 #projects_titlebox{
-    padding: 5rem;
+    padding: 1rem;
+}
+.flex_this > a{
+    padding: 2rem;
 }
 
 .projects_panel{
+    border-radius: 25px;
+    background-color: rgb(202, 202, 202);
     border: 1px solid black;
     padding: 2rem;
-    margin: 2rem;
+    height: auto;
 }
