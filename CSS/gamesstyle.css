@@ -2,7 +2,9 @@ h1{
     color: white;
 }
 
+
 .game_panel{
     padding: 3rem;
     margin: 1rem;
+    cursor: crosshair;
 }
