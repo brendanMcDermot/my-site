@@ -45,6 +45,10 @@ class Controller{
         }
     }
 
+    frameCounter(){
+        let fc = performance.now()
+        
+    }
 
     animateLoop(time) {
         if(time == 100){
