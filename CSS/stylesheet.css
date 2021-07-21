@@ -57,6 +57,9 @@ nav{
     background-color: rgb(42, 51, 51);
     height: 8vh;
 }
+.selected{
+    border: 1px solid white;
+}
 .nav_Container{
     text-align: center;
 }

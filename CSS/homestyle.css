@@ -59,8 +59,7 @@ canvas{
     background-color: rgba(240, 240, 240, 0.9);
 
 }
-/* 
-#index_exclaimer2 > h2{
-    color: black;
-    size: 1rem;
-} */
+.buton_container{
+    width: 100%;
+    text-align: center;
+}
