@@ -9,6 +9,10 @@ var c = canvas.getContext('2d');
 var view = new View(c);
 var controller = new Controller(view, window.innerWidth, window.innerHeight, mouse, canvas);
 
+var fps = document.getElementById('index_fps')
+let frameCount = 0;
+let frameCounter = 0;
+
 //size the canvas
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -39,15 +43,19 @@ canvas.addEventListener('mousedown', e => {
 // counts the seconds
 setInterval(function(){
 time += 1
-if(time > 350){
+if(time > 35){
     time = 0
 }
+frameCount = frameCounter
+frameCounter = 0
+fps.innerHTML = `Frames Per Second: ${frameCount}`
 // console.log(time)
-}, 100)
+}, 1000)
 
 // animation loop
 function animate() {
     requestAnimationFrame(animate);
+    frameCounter += 1
     c.clearRect(0, 0, innerWidth, innerHeight);
     controller.animateLoop(time);
 }
