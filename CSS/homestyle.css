@@ -1,7 +1,9 @@
-
+h2{
+    width: 16rem;
+}
 #index_titlebox{
     width: 95%;
-    height: 80vh;
+    height: 50vh;
     padding: 20vh 20%;
     color: azure;
 }
@@ -18,6 +20,9 @@
     padding: 1rem;
     margin: 2rem;
 }
+.index_panel > p{
+    padding: 2rem;
+}
 
 canvas{
     background: linear-gradient(to left, rgba(0, 0, 50, 1), rgba(0, 1, 0, 1));
@@ -26,3 +31,36 @@ canvas{
     left: 0;
     z-index: -1;
 }
+
+.index_headers{
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-7deg);/* Safari */
+    -moz-transform: rotate(-7deg); /* Firefox */
+    -ms-transform: rotate(-7deg);/* IE */
+    -o-transform: rotate(-7deg);/* Opera */
+    /* filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);Internet Explorer */
+}
+
+#index_exclaimer{
+    width: 75%;
+    padding: 2.5%;
+    margin: 1rem 10% 4rem;
+    background-image: url("../images/beeStripes.png"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 10%; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border: 2px solid rgb(235, 220, 90);
+}
+#index_exclaimer2{
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(240, 240, 240, 0.9);
+
+}
+/* 
+#index_exclaimer2 > h2{
+    color: black;
+    size: 1rem;
+} */
