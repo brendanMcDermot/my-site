@@ -42,8 +42,8 @@ canvas.addEventListener('mousedown', e => {
 
 // counts the seconds
 setInterval(function(){
-time += 1
-if(time > 35){
+time += 10
+if(time > 350){
     time = 0
 }
 frameCount = frameCounter
