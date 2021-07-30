@@ -9,11 +9,12 @@ var c = canvas.getContext('2d');
 var view = new View(c);
 var controller = new Controller(view, window.innerWidth, window.innerHeight, mouse, canvas);
 
+// variables for calculating fps
 var fps = document.getElementById('index_fps')
 let frameCount = 0;
 let frameCounter = 0;
 
-//size the canvas
+// size the canvas
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
@@ -99,13 +100,25 @@ function sampleParticleColor(){
     Rgb3 = document.getElementById('pRgb3').value
     rGb3 = document.getElementById('prGb3').value
     rgB3 = document.getElementById('prgB3').value
-    sample1 = document.getElementById('color_particle_three')
-    sample1.style.backgroundColor = `rgb(${Rgb3}, ${rGb3}, ${rgB3})`
+    sample3 = document.getElementById('color_particle_three')
+    sample3.style.backgroundColor = `rgb(${Rgb3}, ${rGb3}, ${rgB3})`
     Rgb4 = document.getElementById('pRgb4').value
     rGb4 = document.getElementById('prGb4').value
     rgB4 = document.getElementById('prgB4').value
-    sample2 = document.getElementById('color_particle_four')
-    sample2.style.backgroundColor = `rgb(${Rgb4}, ${rGb4}, ${rgB4})`
+    sample4 = document.getElementById('color_particle_four')
+    sample4.style.backgroundColor = `rgb(${Rgb4}, ${rGb4}, ${rgB4})`
+    Rgb5 = document.getElementById('pRgb5').value
+    rGb5 = document.getElementById('prGb5').value
+    rgB5 = document.getElementById('prgB5').value
+    sample5 = document.getElementById('color_outline')
+    sample5.style.backgroundColor = `rgb(${Rgb5}, ${rGb5}, ${rgB5})`
 
     controller.updateParticleColor(Rgb1, rGb1, rgB1, Rgb2, rGb2, rgB2, Rgb3, rGb3, rgB3, Rgb4, rGb4, rgB4)
+}
+
+function changeActorAmount(){
+    newValue = document.getElementById('no_of_actors').value
+    actorDisplay = document.getElementById('display_actor_number')
+    actorDisplay.innerHTML = `${newValue}`
+    controller.changeActorAmount(newValue)
 }
