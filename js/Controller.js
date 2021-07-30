@@ -45,6 +45,24 @@ class Controller{
         }
     }
 
+    updateBackgroundColor(r1, g1, b1, r2, g2, b2){
+        console.log('update color ran in controller')
+        this.backgroundL.r = r1
+        this.backgroundL.g = g1
+        this.backgroundL.b = b1
+        this.backgroundR.r = r2
+        this.backgroundR.g = g2
+        this.backgroundR.b = b2
+        console.log(this.backgroundL)
+        console.log(this.backgroundR)
+    }
+
+    updateParticleColor(r1, g1, b1, r2, g2, b2, r3, g3, b3, r4, g4, b4){
+        console.log('update particle ran in controller')
+
+    }
+
+
     frameCounter(){
         let fc = performance.now()
         

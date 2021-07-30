@@ -68,4 +68,44 @@ console.log('inner height = ' + innerHeight)
 console.log('inner width = ' + innerWidth)
 animate();
 
+function sampleBackgroundColor(){
+    console.log('background color called')
+    Rgb1 = document.getElementById('Rgb1').value
+    rGb1 = document.getElementById('rGb1').value
+    rgB1 = document.getElementById('rgB1').value
+    sample1 = document.getElementById('color_background_one')
+    sample1.style.backgroundColor = `rgb(${Rgb1}, ${rGb1}, ${rgB1})`
+    Rgb2 = document.getElementById('Rgb2').value
+    rGb2 = document.getElementById('rGb2').value
+    rgB2 = document.getElementById('rgB2').value
+    sample2 = document.getElementById('color_background_two')
+    sample2.style.backgroundColor = `rgb(${Rgb2}, ${rGb2}, ${rgB2})`
 
+    controller.updateBackgroundColor(Rgb1, rGb1, rgB1, Rgb2, rGb2, rgB2)
+}
+
+function sampleParticleColor(){
+    console.log('particle controller called')
+    Rgb1 = document.getElementById('pRgb1').value
+    rGb1 = document.getElementById('prGb1').value
+    rgB1 = document.getElementById('prgB1').value
+    sample1 = document.getElementById('color_particle_one')
+    sample1.style.backgroundColor = `rgb(${Rgb1}, ${rGb1}, ${rgB1})`
+    Rgb2 = document.getElementById('pRgb2').value
+    rGb2 = document.getElementById('prGb2').value
+    rgB2 = document.getElementById('prgB2').value
+    sample2 = document.getElementById('color_particle_two')
+    sample2.style.backgroundColor = `rgb(${Rgb2}, ${rGb2}, ${rgB2})`
+    Rgb3 = document.getElementById('pRgb3').value
+    rGb3 = document.getElementById('prGb3').value
+    rgB3 = document.getElementById('prgB3').value
+    sample1 = document.getElementById('color_particle_three')
+    sample1.style.backgroundColor = `rgb(${Rgb3}, ${rGb3}, ${rgB3})`
+    Rgb4 = document.getElementById('pRgb4').value
+    rGb4 = document.getElementById('prGb4').value
+    rgB4 = document.getElementById('prgB4').value
+    sample2 = document.getElementById('color_particle_four')
+    sample2.style.backgroundColor = `rgb(${Rgb4}, ${rGb4}, ${rgB4})`
+
+    controller.updateParticleColor(Rgb1, rGb1, rgB1, Rgb2, rGb2, rgB2, Rgb3, rGb3, rgB3, Rgb4, rGb4, rgB4)
+}

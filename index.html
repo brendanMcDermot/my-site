@@ -36,7 +36,7 @@
 
     <div id="index_content">
         <div class="index_panel">
-            <h2 class="index_headers">This Site</h2>
+            <h2>This Site</h2>
             <p>In the early part of 2021 I created this website as a showcase of my ability to code and design.
                 It shows many of the projects i have completed either for my degree or for peronal growth.
                 The website itself was created in html5, css and javascript and acts as a nice feature for anyone
@@ -46,10 +46,49 @@
         </div>
 
         <div class="index_panel">
-            <h2 class="index_headers">Customisable Webpage</h2>
+            <h2>Customisable Webpage</h2>
             <p>play with some of the values to customise the look and feel of the site on your device.
             </p>
             <p><br>(Under Development) </p>
+            <div id="theme_controller">
+                <div id="background_controller">
+                    <p>change the background color of the site.</p>
+                    <p>color one</p>
+                    <input type="range" min="0" max="255" value="0" class="Rgb" id="Rgb1" onchange="sampleBackgroundColor()">
+                    <input type="range" min="0" max="255" value="0" class="rGb" id="rGb1" onchange="sampleBackgroundColor()">
+                    <input type="range" min="0" max="255" value="0" class="rgB" id="rgB1" onchange="sampleBackgroundColor()">
+                    <div id="color_background_one"></div>
+                    <p>color two</p>
+                    <input type="range" min="0" max="255" value="0" class="Rgb" id="Rgb2" onchange="sampleBackgroundColor()">
+                    <input type="range" min="0" max="255" value="0" class="rGb" id="rGb2" onchange="sampleBackgroundColor()">
+                    <input type="range" min="0" max="255" value="0" class="rgB" id="rgB2" onchange="sampleBackgroundColor()">
+                    <div id="color_background_two"></div>                    
+                </div>
+                <div id="particle_controller">
+                    <p>change the colors of the particles.</p> 
+                    <p>color one</p>
+                    <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb1" onchange="sampleParticleColor()">
+                    <input type="range" min="0" max="255" value="0" class="rGb" id="prGb1" onchange="sampleParticleColor()">
+                    <input type="range" min="0" max="255" value="0" class="rgB" id="prgB1" onchange="sampleParticleColor()">
+                    <div id="color_particle_one"></div>
+                    <p>color two</p>
+                    <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb2" onchange="sampleParticleColor()">
+                    <input type="range" min="0" max="255" value="0" class="rGb" id="prGb2" onchange="sampleParticleColor()">
+                    <input type="range" min="0" max="255" value="0" class="rgB" id="prgB2" onchange="sampleParticleColor()">
+                    <div id="color_particle_two"></div> 
+                    <p>color three</p>
+                    <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb3" onchange="sampleParticleColor()">
+                    <input type="range" min="0" max="255" value="0" class="rGb" id="prGb3" onchange="sampleParticleColor()">
+                    <input type="range" min="0" max="255" value="0" class="rgB" id="prgB3" onchange="sampleParticleColor()">
+                    <div id="color_particle_three"></div>
+                    <p>color four</p>
+                    <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb4" onchange="sampleParticleColor()">
+                    <input type="range" min="0" max="255" value="0" class="rGb" id="prGb4" onchange="sampleParticleColor()">
+                    <input type="range" min="0" max="255" value="0" class="rgB" id="prgB4" onchange="sampleParticleColor()">
+                    <div id="color_particle_four"></div> 
+                </div>
+                
+            </div>
             <div id="index_fps"></div>
         </div>
 
