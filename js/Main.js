@@ -43,6 +43,7 @@ canvas.addEventListener('mousedown', e => {
   });
   
 
+  
 // counts the seconds
 setInterval(function(){
 time += 10
