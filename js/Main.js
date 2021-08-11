@@ -14,6 +14,8 @@ var fps = document.getElementById('index_fps')
 let frameCount = 0;
 let frameCounter = 0;
 
+
+//..........................Variables set..........................................
 // size the canvas
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -44,9 +46,10 @@ canvas.addEventListener('mousedown', e => {
 // counts the seconds
 setInterval(function(){
 time += 10
-if(time > 350){
+if(time > 300){
     time = 0
 }
+this.controller.timedEvents(time)
 frameCount = frameCounter
 frameCounter = 0
 fps.innerHTML = `Frames Per Second: ${frameCount}`
@@ -60,8 +63,9 @@ function animate() {
     c.clearRect(0, 0, innerWidth, innerHeight);
     controller.animateLoop(time);
 }
-
-
+ function save(){
+    controller.save()
+ }
 
 controller.init(innerWidth, innerHeight);
 console.log(controller)
@@ -113,12 +117,33 @@ function sampleParticleColor(){
     sample5 = document.getElementById('color_outline')
     sample5.style.backgroundColor = `rgb(${Rgb5}, ${rGb5}, ${rgB5})`
 
-    controller.updateParticleColor(Rgb1, rGb1, rgB1, Rgb2, rGb2, rgB2, Rgb3, rGb3, rgB3, Rgb4, rGb4, rgB4)
+    controller.updateParticleColor(Rgb1, rGb1, rgB1, Rgb2, rGb2, rgB2, Rgb3, rGb3, rgB3, Rgb4, rGb4, rgB4, Rgb5, rGb5, rgB5)
 }
 
 function changeActorAmount(){
     newValue = document.getElementById('no_of_actors').value
     actorDisplay = document.getElementById('display_actor_number')
-    actorDisplay.innerHTML = `${newValue}`
+    actorDisplay.innerHTML = `No of particles: ${newValue}`
     controller.changeActorAmount(newValue)
+}
+
+function changeTheme(theme){
+    console.log(theme)
+    controller.setTheme(theme)
+}
+
+function changePreTheme(target){
+    if(target == 'blue'){
+        controller.updateParticleColor(0,0,50, 0,0,75, 0,0,120, 0,0,200, 240,240,240)
+        controller.updateBackgroundColor(0,0,180, 0,0,0)
+    }else if(target == 'rain'){
+        controller.updateParticleColor(150,150,200, 150,150,175, 180,180,220, 190,190,250, 200,200,240)
+        controller.updateBackgroundColor(120,100,180, 150,150,250)
+    }else if(target == 'neon'){
+        controller.updateParticleColor(250,0,50, 255,157,231, 253,200,215, 165,215,243, 250,250,250)
+        controller.updateBackgroundColor(1,30,253, 182,107,253)
+    }else if(target == 'darkWarmth'){
+        controller.updateParticleColor(230,228,0, 0,0,75, 15,250,120, 10,20,200, 240,240,240)
+        controller.updateBackgroundColor(0,200,180, 0,50,0)
+    }
 }
