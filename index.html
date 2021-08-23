@@ -35,146 +35,154 @@
     </div> -->
 
     <div id="index_content">
-        <div class="index_panel">
-            <h2>This Site</h2>
-            <p>In the early part of 2021 I created this website as a showcase of my ability to code and design.
-                It shows many of the projects i have completed either for my degree or for personal growth.
-                The website itself was created in html, css and javascript and acts as a nice feature for anyone
-                wanting to learn more about me and what i have achieved so far on my journey in to 
-                software development.<br><br>
-                The style of the site was created to grab peoples attention and show what im capable of.
-                there is no concurrent theme through most pages and the design may not seem like 
-                one you would use for the majority of websites. for this please check websites via 
-                the projects page. or click <a href="websites.html">here</a> to go straight there. There
-                you can see much more restraint :).
-            </p>
-            <h2>Customise this Webpage</h2>
-            <div id="theme_controller">
-                <div class="flex_this">
-                    <div>
+        <div class="offset_left">
+            <div class="index_panel">
+                <h2>This Site</h2>
+                <p>In the early part of 2021 I created this website as a showcase of my ability to code and design.
+                    It shows many of the projects i have completed either for my degree or for personal growth.
+                    The website itself was created in html, css and javascript and acts as a nice feature for anyone
+                    wanting to learn more about me and what i have achieved so far on my journey in to 
+                    software development.<br><br>
+                    The style of the site was created to grab peoples attention and show what im capable of.
+                    there is no concurrent theme through most pages and the design may not seem like 
+                    one you would use for the majority of websites. for this please check websites via 
+                    the projects page. or click <a href="websites.html">here</a> to go straight there. There
+                    you can see much more restraint :).
+                </p>
+            </div>              
+        </div>
+        <div class="offset_right">
+            <div class="index_panel">  
+                <div id="theme_controller">
+                    <h2>Customise this Webpage</h2>
+                    <div class="flex_this">
                         <div>
-                            <div id="index_fps">
-                                <h4>Frames per second:</h4>
+                            <div>
+                                <div id="index_fps">
+                                    <h4>Frames per second:</h4>
+                                </div>
                             </div>
+                            <div class="container_indented">
+                                <div id="background_controller">
+                                    <h4>Change the background color of the site.</h4>
+                                    <p>color one</p>
+                                    <div class="always_flex">
+                                        <div class="slider_container">
+                                            <input type="range" min="0" max="255" value="0" class="Rgb" id="Rgb1" onchange="sampleBackgroundColor()">
+                                            <input type="range" min="0" max="255" value="0" class="rGb" id="rGb1" onchange="sampleBackgroundColor()">
+                                            <input type="range" min="0" max="255" value="0" class="rgB" id="rgB1" onchange="sampleBackgroundColor()">                                    
+                                        </div>  
+                                        <div id="color_background_one" class="color_sample"></div>
+                                    </div>
+
+                                    <p>color two</p>
+                                    <div class="always_flex">
+                                        <div class="slider_container">
+                                            <input type="range" min="0" max="255" value="0" class="Rgb" id="Rgb2" onchange="sampleBackgroundColor()">
+                                            <input type="range" min="0" max="255" value="0" class="rGb" id="rGb2" onchange="sampleBackgroundColor()">
+                                            <input type="range" min="0" max="255" value="0" class="rgB" id="rgB2" onchange="sampleBackgroundColor()">
+                                        </div>
+                                        <div id="color_background_two" class="color_sample"></div> 
+                                    </div>                   
+                                </div>                             
+                            </div>
+
+                            <div class="container_indented">
+                                <input type="range" min="1" max="1000" value="1" id="no_of_actors" onchange="changeActorAmount()">
+                                <div><p id="display_actor_number">No of prticles:</p></div>
+                                <h4>default themes</h4>
+                                <div class="flex_this_wrap">
+                                    <button class="theme_button" onclick="changePreTheme('blue')">Blues</button>
+                                    <button class="theme_button"  onclick="changePreTheme('rain')">Rain</button>
+                                    <button class="theme_button"  onclick="changePreTheme('neon')">Neon</button>
+                                    <button class="theme_button"  onclick="changePreTheme('darkWarmth')">Dark warmth</button>
+                                </div>
+                            </div>                                                
                         </div>
-                        <div class="container_indented">
-                            <div id="background_controller">
-                                <h4>Change the background color of the site.</h4>
+                        <div  class="container_indented">
+                            <div id="particle_controller">
+                                <h4>change the colors of the particles.</h4>
+
                                 <p>color one</p>
                                 <div class="always_flex">
                                     <div class="slider_container">
-                                        <input type="range" min="0" max="255" value="0" class="Rgb" id="Rgb1" onchange="sampleBackgroundColor()">
-                                        <input type="range" min="0" max="255" value="0" class="rGb" id="rGb1" onchange="sampleBackgroundColor()">
-                                        <input type="range" min="0" max="255" value="0" class="rgB" id="rgB1" onchange="sampleBackgroundColor()">                                    
-                                    </div>  
-                                    <div id="color_background_one" class="color_sample"></div>
+                                        <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb1" onchange="sampleParticleColor()">
+                                        <input type="range" min="0" max="255" value="0" class="rGb" id="prGb1" onchange="sampleParticleColor()">
+                                        <input type="range" min="0" max="255" value="0" class="rgB" id="prgB1" onchange="sampleParticleColor()">
+                                    </div>
+                                    <div id="color_particle_one" class="color_sample"></div>
                                 </div>
 
                                 <p>color two</p>
                                 <div class="always_flex">
                                     <div class="slider_container">
-                                        <input type="range" min="0" max="255" value="0" class="Rgb" id="Rgb2" onchange="sampleBackgroundColor()">
-                                        <input type="range" min="0" max="255" value="0" class="rGb" id="rGb2" onchange="sampleBackgroundColor()">
-                                        <input type="range" min="0" max="255" value="0" class="rgB" id="rgB2" onchange="sampleBackgroundColor()">
+                                        <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb2" onchange="sampleParticleColor()">
+                                        <input type="range" min="0" max="255" value="0" class="rGb" id="prGb2" onchange="sampleParticleColor()">
+                                        <input type="range" min="0" max="255" value="0" class="rgB" id="prgB2" onchange="sampleParticleColor()">
                                     </div>
-                                    <div id="color_background_two" class="color_sample"></div> 
-                                </div>                   
-                            </div>                             
+                                    <div id="color_particle_two" class="color_sample"></div> 
+                                </div>
+
+                                <p>color three</p>
+                                <div class="always_flex">
+                                    <div class="slider_container">
+                                        <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb3" onchange="sampleParticleColor()">
+                                        <input type="range" min="0" max="255" value="0" class="rGb" id="prGb3" onchange="sampleParticleColor()">
+                                        <input type="range" min="0" max="255" value="0" class="rgB" id="prgB3" onchange="sampleParticleColor()">
+                                    </div>
+                                    <div id="color_particle_three" class="color_sample"></div>
+                                </div>
+
+                                
+
+                                <p>color four</p>
+                                <div class="always_flex">
+                                    <div class="slider_container">
+                                        <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb4" onchange="sampleParticleColor()">
+                                        <input type="range" min="0" max="255" value="0" class="rGb" id="prGb4" onchange="sampleParticleColor()">
+                                        <input type="range" min="0" max="255" value="0" class="rgB" id="prgB4" onchange="sampleParticleColor()">
+                                    </div>
+                                    <div id="color_particle_four" class="color_sample"></div> 
+                                </div>
+
+                                
+                                
+                                <p>outline color</p>
+                                <div class="always_flex">
+                                    <div class="slider_container">
+                                        <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb5" onchange="sampleParticleColor()">
+                                        <input type="range" min="0" max="255" value="0" class="rGb" id="prGb5" onchange="sampleParticleColor()">
+                                        <input type="range" min="0" max="255" value="0" class="rgB" id="prgB5" onchange="sampleParticleColor()">
+                                    </div>
+                                    <div id="color_outline" class="color_sample"></div>
+                                </div>
+
+                            </div>                          
+                        </div>
+                        <div>
+                            <div>
+                                <button id="save_custom" onclick="save()">Save settings</button>
+                            </div>
+                            <div>
+                                <div class="flex_this_wrap">
+                                    <button class="theme_button" onclick="changeTheme('default')">Default</button>
+                                    <button class="theme_button"  onclick="changeTheme('rain')">Rain</button>
+                                    <button class="theme_button"  onclick="changeTheme('echo')">Echo</button>
+                                    <button class="theme_button"  onclick="changeTheme('particles')">Particle</button>
+                                    <!-- <button class="theme_button"  onclick="changeTheme('tunnel')">Tunnel</button>
+                                    <button class="theme_button"  onclick="changeTheme('zombie')">Zombie</button> -->
+                                </div>
+                            </div>                        
                         </div>
 
-                        <div class="container_indented">
-                            <input type="range" min="1" max="1000" value="1" id="no_of_actors" onchange="changeActorAmount()">
-                            <div><p id="display_actor_number">No of prticles:</p></div>
-                            <h4>default themes</h4>
-                            <div class="flex_this_wrap">
-                                <button class="theme_button" onclick="changePreTheme('blue')">Blues</button>
-                                <button class="theme_button"  onclick="changePreTheme('rain')">Rain</button>
-                                <button class="theme_button"  onclick="changePreTheme('neon')">Neon</button>
-                                <button class="theme_button"  onclick="changePreTheme('darkWarmth')">Dark warmth</button>
-                            </div>
-                        </div>                                                
-                    </div>
-                    <div  class="container_indented">
-                        <div id="particle_controller">
-                            <h4>change the colors of the particles.</h4>
-
-                            <p>color one</p>
-                            <div class="always_flex">
-                                <div class="slider_container">
-                                    <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb1" onchange="sampleParticleColor()">
-                                    <input type="range" min="0" max="255" value="0" class="rGb" id="prGb1" onchange="sampleParticleColor()">
-                                    <input type="range" min="0" max="255" value="0" class="rgB" id="prgB1" onchange="sampleParticleColor()">
-                                </div>
-                                <div id="color_particle_one" class="color_sample"></div>
-                            </div>
-
-                            <p>color two</p>
-                            <div class="always_flex">
-                                <div class="slider_container">
-                                    <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb2" onchange="sampleParticleColor()">
-                                    <input type="range" min="0" max="255" value="0" class="rGb" id="prGb2" onchange="sampleParticleColor()">
-                                    <input type="range" min="0" max="255" value="0" class="rgB" id="prgB2" onchange="sampleParticleColor()">
-                                </div>
-                                <div id="color_particle_two" class="color_sample"></div> 
-                            </div>
-
-                            <p>color three</p>
-                            <div class="always_flex">
-                                <div class="slider_container">
-                                    <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb3" onchange="sampleParticleColor()">
-                                    <input type="range" min="0" max="255" value="0" class="rGb" id="prGb3" onchange="sampleParticleColor()">
-                                    <input type="range" min="0" max="255" value="0" class="rgB" id="prgB3" onchange="sampleParticleColor()">
-                                </div>
-                                <div id="color_particle_three" class="color_sample"></div>
-                            </div>
-
-                            
-
-                            <p>color four</p>
-                            <div class="always_flex">
-                                <div class="slider_container">
-                                    <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb4" onchange="sampleParticleColor()">
-                                    <input type="range" min="0" max="255" value="0" class="rGb" id="prGb4" onchange="sampleParticleColor()">
-                                    <input type="range" min="0" max="255" value="0" class="rgB" id="prgB4" onchange="sampleParticleColor()">
-                                </div>
-                                <div id="color_particle_four" class="color_sample"></div> 
-                            </div>
-
-                            
-                            
-                            <p>outline color</p>
-                            <div class="always_flex">
-                                <div class="slider_container">
-                                    <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb5" onchange="sampleParticleColor()">
-                                    <input type="range" min="0" max="255" value="0" class="rGb" id="prGb5" onchange="sampleParticleColor()">
-                                    <input type="range" min="0" max="255" value="0" class="rgB" id="prgB5" onchange="sampleParticleColor()">
-                                </div>
-                                <div id="color_outline" class="color_sample"></div>
-                            </div>
-
-                        </div>                          
-                    </div>
+                    </div>                                     
                     <div>
-                        <div>
-                            <button id="save_custom" onclick="save()">Save settings</button>
-                        </div>
-                        <div>
-                            <div class="flex_this_wrap">
-                                <button class="theme_button" onclick="changeTheme('default')">Default</button>
-                                <button class="theme_button"  onclick="changeTheme('rain')">Rain</button>
-                                <button class="theme_button"  onclick="changeTheme('echo')">Echo</button>
-                                <button class="theme_button"  onclick="changeTheme('particles')">Particle</button>
-                                <!-- <button class="theme_button"  onclick="changeTheme('tunnel')">Tunnel</button>
-                                <button class="theme_button"  onclick="changeTheme('zombie')">Zombie</button> -->
-                            </div>
-                        </div>                        
-                    </div>
-
-                </div>                                     
-                <div>
-                
-            </div>
+                    
+                </div>
+            </div>            
         </div>
+
+
     </div>
 
     <canvas></canvas>
