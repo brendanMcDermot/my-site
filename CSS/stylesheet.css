@@ -134,6 +134,10 @@ footer{
       flex-direction: column;
   }
 
+  .fader{
+      color: white;
+  }
+
   #projects_titlebox, #game_titlebox, #websites_titlebox, #software_titlebox{
     padding: 1rem;
     margin: 1rem 5rem;
