@@ -29,11 +29,11 @@ main{
 #profile_pic{
     width: 20%;
     position: absolute;
-    top: 12vh;
+    top: 15vw;
     left: 40;
 }
 
 #prof_pic_buffer{
     width: 25%;
-    height: 6rem;
+    height: 25vw;
 }
