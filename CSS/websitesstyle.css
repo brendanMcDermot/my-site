@@ -8,6 +8,11 @@
     margin: 3rem auto;
 }
 
+main{
+  background-image: linear-gradient(to bottom right, rgb(165, 195, 241), rgb(246, 250, 252));
+  padding: 3rem;
+}
+
   /* Media Querries */
   @media only screen and (min-width: 600px) {
 

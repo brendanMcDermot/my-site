@@ -45,7 +45,7 @@ button{
   margin: 2rem 10%;
   width: 80%;
   padding: 1rem;
-  background-color: greenyellow;
+  background-color: rgb(171, 224, 187);
 }
 
 .flex_this{
@@ -103,7 +103,7 @@ button{
       height: 10px;
       cursor: ew-resize;
       background: #db0e0e;
-      box-shadow: -80px 0 0 80px #ee8282;
+      box-shadow: -80px 0 0 80px #a77a7a;
     }
     .rGb[type='range']::-webkit-slider-thumb {
         border-radius: 2px;
@@ -112,7 +112,7 @@ button{
         height: 10px;
         cursor: ew-resize;
         background: #06881c;
-        box-shadow: -80px 0 0 80px #6bc77a;
+        box-shadow: -80px 0 0 80px #729978;
       }
       .rgB[type='range']::-webkit-slider-thumb {
         width: 10px;
@@ -120,7 +120,7 @@ button{
         height: 10px;
         cursor: ew-resize;
         background: #3011ca;
-        box-shadow: -80px 0 0 80px #7371df;
+        box-shadow: -80px 0 0 80px #6b6a97;
       }
 
 }

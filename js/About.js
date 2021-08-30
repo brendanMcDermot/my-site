@@ -1,9 +1,11 @@
 const fader = document.getElementById('fader')
 const profilePic = document.getElementById('profile_pic')
-let profFromLeft = -20
+let posFromLeft = -250
 let isLoaded = false
 let isAnimate = true
 let aboutState = new AboutState()
+
+
 
 function animate() {
     if(isAnimate){
@@ -16,16 +18,16 @@ function animate() {
             if(aboutState.faderValue > 0){
                 aboutState.faderValue -= 0.01
             }else{
-                fader.style.zIndex  = "-2"
+                fader.style.zIndex  = "-1"
             }
         }
-        if(profFromLeft < 50){
+        if(posFromLeft < 50){
             console.log(profilePic.style.x)
-            profilePic.style.left = `${profFromLeft}px`
-            profFromLeft = decelerate(profFromLeft)
+            profilePic.style.left = `${posFromLeft}px`
+            posFromLeft = decelerate(posFromLeft)
         }        
     }
 
 }
+window.onload = animate()
 
-animate()

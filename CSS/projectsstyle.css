@@ -10,7 +10,10 @@ h2, p{
     justify-content: space-between;
 }
 
-
+main{
+    background-image: linear-gradient(to bottom right, rgb(165, 195, 241), rgb(246, 250, 252));
+    padding: 3rem;
+  }
 
 .flex_this > a{
     padding: 2rem;

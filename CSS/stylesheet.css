@@ -24,10 +24,8 @@ h1{
 
 
 main{
-    /* justify-content: center; */
     width: 100vw;
     min-height: 90vh;
-    /* text-align: center; */
 }
 
 h1{
@@ -54,9 +52,6 @@ nav{
     padding: 1rem 0rem 0rem 0rem;
 }
 
-.selected{
-
-}
 .nav_Container{
     text-align: center;
 }
@@ -67,11 +62,8 @@ nav p{
 .project_img{
     max-height: 200px;
     margin: 0px 30px;
-    float: right;
-    width: 30%;
+    width: 80%;
 }
-
-
 
 .nav_Container > a:link{
     text-decoration: none;
@@ -80,6 +72,7 @@ nav p{
 
 .nav2{
     background-color: rgb(60, 60, 60);
+    height: 7vh;
 }
 
 a:link{
@@ -130,7 +123,6 @@ footer{
     font-weight: bold;
     line-height: 25px;
     margin: 0.25rem;
-  
   }
 
   .flex_this{
@@ -166,10 +158,17 @@ footer{
     .flex_this {
       flex-direction: row;
     }
+    .project_img{
+        float: right;
+        width: 30%;
+    }
   }
 
   @media only screen and (max-width: 600px) {
     .offset_left, .offset_right{
         margin: 0px;
+    }
+    .project_img{
+        margin: 30px 30px;
     }
   }

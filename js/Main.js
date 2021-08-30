@@ -68,12 +68,6 @@ function animate() {
     controller.save()
  }
 
-controller.init(innerWidth, innerHeight);
-console.log(controller)
-console.log('inner height = ' + innerHeight)
-console.log('inner width = ' + innerWidth)
-animate();
-
 function sampleBackgroundColor(){
     console.log('background color called')
     Rgb1 = document.getElementById('Rgb1').value
@@ -135,7 +129,7 @@ function changeTheme(theme){
 
 function changePreTheme(target){
     if(target == 'blue'){
-        controller.updateParticleColor(0,0,50, 0,0,75, 0,0,120, 0,0,200, 240,240,240)
+        controller.updateParticleColor(0,0,50, 0,0,75, 0,0,120, 0,0,200, 120,120,240)
         controller.updateBackgroundColor(0,0,180, 0,0,0)
     }else if(target == 'rain'){
         controller.updateParticleColor(150,150,200, 150,150,175, 180,180,220, 190,190,250, 200,200,240)
@@ -148,3 +142,9 @@ function changePreTheme(target){
         controller.updateBackgroundColor(0,200,180, 0,50,0)
     }
 }
+
+controller.init(innerWidth, innerHeight);
+console.log(controller)
+console.log('inner height = ' + innerHeight)
+console.log('inner width = ' + innerWidth)
+window.onload = animate();
