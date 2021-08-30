@@ -1,4 +1,20 @@
 .software_panel{
+    border-radius: 25px;
+    background-color: rgb(202, 202, 202);
+    border: 1px solid rgb(0, 0, 0);
+    max-width: 800px;
+    /* max-height: 200px; */
     padding: 3rem;
+    margin: 3rem auto;
+}
+
+  /* Media Querries */
+  @media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+  .software_panel{
     margin: 1rem;
+  }
 }

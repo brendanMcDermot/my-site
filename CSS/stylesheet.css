@@ -64,10 +64,22 @@ nav p{
     color: white;
 }
 
+.project_img{
+    max-height: 200px;
+    margin: 0px 30px;
+    float: right;
+    width: 30%;
+}
+
+
 
 .nav_Container > a:link{
     text-decoration: none;
     color: white;
+}
+
+.nav2{
+    background-color: rgb(60, 60, 60);
 }
 
 a:link{
@@ -75,20 +87,13 @@ a:link{
 }
 
 .codestrip_header{
+    text-align: center;
     background-image: url("../images/vscodestrip.PNG"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 60px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */   
-}
-
-.offset_left{
-    margin: 0 15% 0 0;
-}
-
-.offset_right{
-    margin: 0 0 0 15%;
 }
 
 footer{
@@ -134,14 +139,18 @@ footer{
       flex-direction: column;
   }
 
+  .flex_wrap{
+      display: flex;
+      flex-wrap: wrap;
+  }
+
   .fader{
       color: white;
   }
 
   #projects_titlebox, #game_titlebox, #websites_titlebox, #software_titlebox{
     padding: 1rem;
-    margin: 1rem 5rem;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(30, 30, 30, 0.6);
     width: auto;
 }
 
