@@ -2,11 +2,19 @@
     padding: 3rem;
 }
 
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    z-index: -1;
+}
+
 main{
     box-sizing: border-box;
     min-height: 90vh;
-    width: 100%;
-    padding: 12rem 1rem 1rem;
+    width: 100vw;
+    padding: 3rem 1rem 1rem;
 }
 
 #portrait_container{
@@ -19,7 +27,7 @@ main{
 
 #fader{
     position: absolute;
-    top: 12vh;
+    top: 10vh;
     width: 100%;
     background-color: rgba(200, 200, 200, 1);
     width: 100%;
@@ -29,11 +37,11 @@ main{
 #profile_pic{
     width: 20%;
     position: absolute;
-    top: 15vw;
+    top: 8rem;
     left: 40;
 }
 
 #prof_pic_buffer{
     width: 25%;
-    height: 25vw;
+    height: 15rem;
 }

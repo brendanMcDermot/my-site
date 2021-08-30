@@ -4,6 +4,6 @@ function insertNameLater(x, y){
 }
 
 function decelerate(x){
-    x += 1
+    x += 5
     return Math.floor(x)
 }
