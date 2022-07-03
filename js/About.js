@@ -1,33 +1,23 @@
-const fader = document.getElementById('fader')
-const profilePic = document.getElementById('profile_pic')
-let posFromLeft = -250
-let isLoaded = false
-let isAnimate = true
-let aboutState = new AboutState()
+console.log("about script running")
+
+function customise(){
+    var defaults = localStorage.getItem("customValues");
+    let theme = JSON.parse(defaults)
+
+    console.log(theme)
+    console.log(theme.backgroundL)
 
 
+    let sdCont = document.getElementById("about_software_developer")
+    let pCont = document.getElementById("about_projects")
+    let lfCont = document.getElementById("about_languages_frameworks")
+    let hCont = document.getElementById("about_hobbies")
 
-function animate() {
-    if(isAnimate){
-        requestAnimationFrame(animate);
-        if(isLoaded == false){
-            fader.style.background = 'rgba(200, 200, 200, 1)'
-            isLoaded = true
-        }else{
-            fader.style.background = `rgba(200, 200, 200, ${aboutState.faderValue})`
-            if(aboutState.faderValue > 0){
-                aboutState.faderValue -= 0.01
-            }else{
-                fader.style.zIndex  = "-1"
-            }
-        }
-        if(posFromLeft < 50){
-            console.log(profilePic.style.x)
-            profilePic.style.left = `${posFromLeft}px`
-            posFromLeft = decelerate(posFromLeft)
-        }        
-    }
-
+    sdCont.style.backgroundColor = `rgba(${theme.backgroundL.r}, ${theme.backgroundL.g}, ${theme.backgroundL.b}, 0.1)`
+    pCont.style.backgroundColor = `rgba(${theme.backgroundL.r}, ${theme.backgroundL.g}, ${theme.backgroundL.b}, 0.6)`
+    lfCont.style.backgroundColor = `rgba(${theme.backgroundR.r}, ${theme.backgroundR.g}, ${theme.backgroundR.b}, 0.1)`
+    hCont.style.backgroundColor = `rgba(${theme.backgroundR.r}, ${theme.backgroundR.g}, ${theme.backgroundR.b}, 0.6)`
 }
-window.onload = animate()
-
+window.onload = function() {
+    customise();
+  };
