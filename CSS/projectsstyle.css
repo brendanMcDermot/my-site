@@ -4,17 +4,17 @@ img {
 }
 
 main {
-  padding: 7rem;
+  padding: 1rem;
 }
 
 h2 {
   text-transform: uppercase;
-  font-size: 4em;
+  font-size: 2em;
 }
 
 #project_summary p {
-  padding: 2rem 2rem 1rem;
-  font-size: 2em;
+  padding: 0.5rem 0.5rem 0.25rem;
+  font-size: 1em;
 }
 
 .grid-container {
@@ -29,6 +29,10 @@ h2 {
   margin: 0.4rem;
   border-radius: 15px;
   border: 2px solid grey;
+}
+
+.grid_project:hover {
+  border: 2px solid rgb(175, 225, 175);
 }
 
 .grid_images {
@@ -52,11 +56,33 @@ h2 {
     margin: 1rem;
     grid-template-columns: auto auto;
   }
+  main{
+    padding: 4rem;
+  }
+  h2{
+    font-size: 2.5em;
+
+  }
+  #project_summary p {
+    padding: 1rem 1rem 0.5rem;
+    font-size: 1em;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .grid-container {
     margin: 1rem;
     grid-template-columns: auto auto auto;
+  }
+  main{
+    padding: 7rem;
+  }
+  h2{
+    font-size: 4em;
+
+  }
+  #project_summary p {
+    padding: 2rem 2rem 1rem;
+    font-size: 2em;
   }
 }

@@ -1,11 +1,11 @@
 h2{
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 2em;
 }
 
 .about_dividers p{
     padding: 2rem;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .about_dividers{
@@ -20,3 +20,16 @@ nav{
     left: 0;
     z-index: 2;
 }
+
+/* Media Querries */
+@media only screen and (min-width: 800px) {
+    h2{
+      font-size: 2em;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    h2{
+      font-size: 4em;
+    }
+  }
