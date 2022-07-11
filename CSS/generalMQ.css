@@ -1,0 +1,123 @@
+@media only screen and (min-width: 450px) {
+  nav {
+    /* background-color: green; */
+  }
+
+  nav p {
+    font-size: 3vw;
+  }
+
+  h1 {
+    font-size: 10vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  h3 {
+    font-size: 5vw;
+  }
+
+  h4 {
+    font-size: 4vw;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+
+  section {
+    padding: 1.5rem 1.5rem 2.5rem;
+  }
+
+  .flex_this450 {
+    display: flex;
+  }
+  .image_figure{
+    font-size: 2.5vw;
+}
+}
+
+@media only screen and (min-width: 800px) {
+  nav {
+    /* background-color: orange; */
+  }
+
+  h1 {
+    font-size: 6vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+
+  h4 {
+    font-size: 2vw;
+  }
+
+  p {
+    font-size: 3vw;
+    max-width: 800px;
+  }
+
+  section {
+    padding: 3rem;
+  }
+
+  .flex_this800 {
+    display: flex;
+  }
+  .image_figure{
+    font-size: 1.5vw;
+}
+#about_hobbies ul li{
+  font-size: 2rem;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+  nav {
+    /* background-color: red; */
+  }
+
+  nav p {
+    font-size: 1.5vw;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  h3 {
+    font-size: 2.8vw;
+  }
+
+  h4 {
+    font-size: 2vw;
+  }
+
+  p {
+    font-size: 2.5vw;
+  }
+
+  .footer_text {
+    font-size: 1.5vw;
+  }
+
+  section {
+    padding: 4rem 10rem;
+  }
+
+  .flex_this1200 {
+    display: flex;
+  }
+}

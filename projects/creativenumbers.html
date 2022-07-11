@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <title>Creative Numbers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css" />
-    <link rel="stylesheet" type="text/css" href="../CSS/projectsstyle.css" />
-    <script src="../js/Actor.js"></script>
-    <script src="../js/View.js"></script>
-    <script src="../js/Controller.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/generalMQ.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/specificProjects/creativeStyle.css" />
+    <script src="../js/shared.js"></script>
+
 </head>
 
 <body>
@@ -26,11 +26,42 @@
     </nav>
 
     <main>
-        <h2>Creative-Numbers.com</h2>
+        <div id="cn_top">
+            <div id="responsive_image">
+                <img id="img_cn" src="../images/responsiveCreativeNumbers.PNG" alt="">
+            </div>
+            <p>Check your own sites reponsiveness with <a href="https://ui.dev/amiresponsive">amiresponsive.</a></p>
+        </div>
+        <section>
+            <h2>Creative-Numbers.com</h2>
+            <p>I created this website in the early part of 2021 and have been slowly building
+                it up with new features.
+            </p>
+        </section>
+        <section>
+            <h2>Particles</h2>
+            <p>The particle system was wrote in vanilla javascript and was a oppurtunity to 
+                to add some interesting logic behind the websites design.
+            </p>
+        </section>
+        <section>
+            <h2>Customisation</h2>
+            <p>To follow up on the particle system I wanted to add some customisation for the user.
+                This customisation allowed the particle system to be customised to a persons own
+                descretion. This then got added to many of the pages as section background colors.
+            </p>
+        </section>
+        <section>
+            <h2>Things learnt</h2>
+            <p>This project has taught me so much. I enjoyed the challenges of logical problem solving
+                regarding particles. how to program things so that they could be customised
+            </p>
+        </section>
+        
 
     </main>
     <footer>
-        <p>If you would like to get in contact please visit my linked in account provided with the link below.</p>
+        <p>If you would like to get in contact please visit my linked in account.</p>
         <div class="footer_logoBox">
             <div class="linkLogoBox">
                 <a href="https://www.linkedin.com/in/brendan-mc-dermott-432637191/?originalSubdomain=nz"
@@ -43,5 +74,9 @@
         </div>
     </footer>
 </body>
+<script>window.onload = function () {
+    customiseSections();
+};
+</script>
 
 </html>

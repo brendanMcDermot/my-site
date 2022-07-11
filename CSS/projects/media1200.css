@@ -1,0 +1,16 @@
+@media only screen and (min-width: 1200px) {
+  .grid-container {
+    margin: 1rem;
+    grid-template-columns: auto auto auto;
+  }
+  main{
+    padding: 7rem;
+  }
+
+  .paragraph {
+    padding: 2rem 2rem 1rem;
+    font-size: 2em;
+  } 
+    /* .................styling................ */
+    /* .................Positioning.............. */    
+}

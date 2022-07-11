@@ -1,0 +1,42 @@
+section{
+    min-height: 100vh;
+}
+
+#seequent_logo_cont{
+    padding: 2rem;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#seequent_image{
+    width: 60%;
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#scrum_image{
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.planning_images{
+    padding: 1rem;    
+    max-width: 550px;
+    margin: 0 auto;
+
+}
+
+#risk_image{
+    padding: 1rem;    
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+#qa_image{
+    padding: 1rem;    
+    max-width: 550px;
+    margin: 0 auto;
+}

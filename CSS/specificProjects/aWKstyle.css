@@ -1,0 +1,86 @@
+html,
+body {
+  background-image: linear-gradient(rgba(64, 134, 248, 0.5), rgba(212, 249, 251, 0.5));
+}
+
+main {
+  overflow-x: hidden;
+  display: flex;
+}
+
+h1, h2, h3{
+  color: white;
+  font-family:monospace
+}
+p{
+  font-family:monospace
+
+}
+section {
+  padding: 0;
+  min-width: 100vw;
+  height: 90vh;
+  align-items: center;
+
+}
+
+.awk_image {
+
+  border-radius: 25px;
+  width: 60%;
+  height: auto;
+  padding: 5rem auto;
+}
+
+.awk_content {
+  z-index: 9;
+  position: relative;
+  top: 5vh;
+  left: 0vh;
+  text-align: center;
+}
+
+.awk_content p {
+  padding: 1rem;
+  background-color: rgba(230, 230, 230, 0.9);
+  margin: 1rem;
+  border-radius: 25px;
+}
+
+.ground_template {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ground_template_img {
+  height: 5rem;
+}
+
+#foreground_mountains {
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: -10;
+}
+.awk_image{
+  max-width: 40vw;
+  max-height: 40vh;
+}
+.breaker_section{
+  color: white;
+  padding:10rem auto;
+  margin:15rem auto;
+}
+@media only screen and (min-width: 570px) {
+  p{
+    font-size: 1rem;
+    max-width: 600px;
+  }
+  #foreground_mountains{
+    max-height: 40vh;
+  }
+}
+
+

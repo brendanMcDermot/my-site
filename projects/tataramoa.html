@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <title>CN Tātarāmoa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css" />
-    <link rel="stylesheet" type="text/css" href="../CSS/projectsstyle.css" />
-    <script src="../js/Actor.js"></script>
-    <script src="../js/View.js"></script>
-    <script src="../js/Controller.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/generalMQ.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/specificProjects/tataramoaStyle.css" />
+    <script src="../js/shared.js"></script>
+
 </head>
 
 <body>
@@ -26,22 +26,136 @@
     </nav>
 
     <main>
-        <h2>Tātarāmoa</h2>
+        <section>
+            <h2>Tātarāmoa</h2>
+            <p class="paragraph">As part of the BICT at Ara Institute of Canterbury, The final part of the degree
+                was a work integrated learning project. I was lucky enough to intern at
+                a large Christchurch Geo-Modelling company called Seequent. This company was very well
+                established and could teach me much.
+            </p>
+            <div id="seequent_logo_cont">
+                <img src="../images/Seequent-Logo.png" alt="">
+
+            </div>
+            
+            <div id="seequent_image">
+                <img src="../images/Geostudio.png" alt="">
+                <p class="image_figure">Seequent Product - Geostudio</p>
+
+                <a href="https://www.seequent.com/">Seequent.com</a>
+            </div>
+        </section>
+        <section>
+            <h3>The Business Value</h3>
+            <p class="paragraph">With the acquisition of Seequent and Sensemetrics into the Bentley
+                Systems family, a possible resource/oppurtunity  was not being explored. this oppurtunity 
+                was for Seequent-applications to use Sensemetrics data to help provide further
+                information to Seequent clientele.
+            </p>
+        </section>
+        <section>
+            <h3>The Project</h3>
+            <p class="paragraph">To manage time and work I used excel to map hours which could 
+                automatically update a burndown chart. This provided a clear visual representation
+                of whether the project and academic deliverables were on track.
+            </p>
+            <div class="flex_this800">
+                <div class="planning_images">
+                    <img src="../images/hoursPlanned.png" alt="">
+                    <p class="image_figure">Excel Time Planning</p>
+
+                </div>
+                <div class="planning_images">
+                    <img src="../images/academicBurndown.png" alt="">
+                    <p class="image_figure">Burndown Chart</p>
+
+                </div>                
+            </div>
+
+        </section>
+        <section>
+            <h3>Methodology - Scrum</h3>
+            <p class="paragraph">The ideal methodology for the project was Scrum, as many stakeholders would be
+                involved and requirements were not clear at the start of development. It was also
+                likely that these requirements would need to be tweaked during development. As
+                scrum was already the methodology of choice for many of the Seequent teams, it was
+                very easy to merge Tātarāmoa with the existing teams processes.
+            </p>
+            <div id="scrum_image">
+                <img src="../images/scrumDiagram.png" alt="">
+                <p class="image_figure">The Scrum Lifecycle</p>
+
+                <a href="https://www.scrum.org/resources/what-is-scrum">Scrum.org</a>
+            </div>
+        </section>
+        <section>
+            <h3>Risk and Quality Management</h3>
+            <p class="paragraph">The Microsoft risk management excel tool was used to record identified
+                risks, estimate their likelihood/impact and quantify each risk. From this mitigation
+                and contingency plans could be made and would be incorporated into the planning of
+                the overall process.
+            </p>
+            <div id="risk_image">
+                <img src="../images/riskManagement.png" alt="">
+                <p class="image_figure">Risk Management Plan</p>
+
+            </div>
+            <p>The Quality assurance plan consisted of white and black box testing for the API as well
+                as quality assurance and quality control tables (based on the Virginia Tech model). 
+                these tables identified processes,
+                deliverables and increments. Many of these were easily evidenced by many of the
+                quality assurance measured already implemented in Seequent such as, GitHub Pull-Requests,
+                definitions of done and Jira tickets.
+            </p>
+            <div id="qa_image">
+                <img src="../images/qualityAssurance.PNG" alt="">
+                <p class="image_figure">Quality Assurance Table</p>
+
+            </div>
+        </section>
+        <section>
+            <h3>What was Learned</h3>
+            <p class="paragraph">This experience was fantastic for developing myself as a software
+                developer. It was an introduction to the implementation of processes within larger
+                organisations and I was able to learn and discuss best practices and concepts with
+                more senior developers.
+            </p>
+        </section>
+        <section>
+            <h3>The final deliverables</h3>
+            <p class="paragraph">along with the numerous academic deliverables such as reports
+                and methodology essays The main industry deliverables at the end of the project was
+                Tataramoa - A proxy/facade API for allowing Seequent client applications to talk
+                to the Sensemetrics API.
+            </p>
+            <img src="../images/tataramoaAllTogether.png" alt="">
+            <p class="image_figure">Tātarāmoa - Sequence Diagram</p>
+            <p> This could allow for the implementation of Seequents on
+                standard auth, the bucketing and aggregation of data while removing  some of the
+                complexity in communicating with Sensemetrics.
+            </p>
+        </section>
 
     </main>
     <footer>
-        <p>If you would like to get in contact please visit my linked in account provided with the link below.</p>
-        <div class="footer_logoBox">
-            <div class="linkLogoBox">
-                <a href="https://www.linkedin.com/in/brendan-mc-dermott-432637191/?originalSubdomain=nz"
-                    target="_blank">
-                    <img src="../images/linkedIn.png" alt="linked in logo">
-                </a>
-            </div>
-            <div class="linkLogoBox">
+        <div class="always_flex">
+            <p class="footer_text">If you would like to get in contact please visit my linked in account.</p>
+            <div class="footer_logoBox">
+                <div class="linkLogoBox">
+                    <a href="https://www.linkedin.com/in/brendan-mc-dermott-432637191" target="_blank">
+                        <img src="../images/linkedIn.png" alt="linked in logo">
+                    </a>
+                </div>
+                <div class="linkLogoBox">
+                </div>
             </div>
         </div>
     </footer>
+    <script>window.onload = function () {
+        customiseSections();
+    };
+    </script>
+
 </body>
 
 </html>

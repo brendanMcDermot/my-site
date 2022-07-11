@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <title>Creative Numbers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/projectsstyle.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/generalMQ.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/projects/style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/projects/media800.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/projects/media1200.css" />
     <script src="js/Actor.js"></script>
     <script src="js/View.js"></script>
     <script src="js/Controller.js"></script>
 </head>
 
-<body>
+<body id="body">
     <nav>
         <div class="nav_Container"><a href="index.html">
                 <p>Home</p>
@@ -27,55 +30,68 @@
 
     <main>
         <h2>Projects</h2>
-        <div id="project_summary">
-            <p>The is the explanation of the projects page.</p>
+        <div id="project_summary" class="paragraph">
+            <p>Both through education and self-driven learning
+                I have created many projects over the past few years. The following
+                are some of the more notable projects that I have created
+                and learned from.</p>
         </div>
         <div class="grid-container">
             <div class="grid_project">
                 <p class="grid_labels"> Tātarāmoa</p>
                 <a href="projects/tataramoa.html">
-                <img class="grid_images" src="images/placeholder.png" alt="Django website">
-            </a>
-            </div>
-            <div class="grid_project">
-                <p class="grid_labels">Django Website</p>
-                <a href="projects/djangoproject.html">
-                <img class="grid_images" src="images/nzhealthhome.PNG" alt="Winform grid based game">
-            </a>
-            </div>
-            <div class="grid_project">
-                <p class="grid_labels">A Winters Knight</p>
-                <a href="projects/awintersknight.html">
-                <img class="grid_images" src="images/AWK.jpg" alt="">
-            </a>
+                    <img class="grid_images" src="images/seequmetrics.PNG" alt="Django website">
+                </a>
             </div>
             <div class="grid_project">
                 <p class="grid_labels">Portfolio site</p>
                 <a href="projects/creativenumbers.html">
-                <img class="grid_images" src="images/c-nsite.PNG" alt="Django website">
-            </a>
+                    <img class="grid_images" src="images/c-nsite.PNG" alt="Django website">
+                </a>
+            </div>
+
+            <div class="grid_project">
+                <p class="grid_labels">A Winters Knight</p>
+                <a href="projects/awintersknight.html">
+                    <img class="grid_images" src="images/AWK.jpg" alt="">
+                </a>
             </div>
             <div class="grid_project">
-                <p class="grid_labels">React and View.js election tracker</p>
+                <p class="grid_labels">Django Website</p>
+                <a href="projects/djangoproject.html">
+                    <img class="grid_images" src="images/placeholder.png" alt="Winform grid based game">
+                </a>
+            </div>
+
+            <div class="grid_project">
+                <p class="grid_labels">React and View.js</p>
                 <a href="projects/electiontracker.html">
-                    <img class="grid_images" src="images/javascriptmvc.PNG" alt="Winform grid based game">
+                    <img class="grid_images" src="images/placeholder.png" alt="Winform grid based game">
                 </a>
             </div>
         </div>
     </main>
     <footer>
-        <p>If you would like to get in contact please visit my linked in account provided with the link below.</p>
-        <div class="footer_logoBox">
-            <div class="linkLogoBox">
-                <a href="https://www.linkedin.com/in/brendan-mc-dermott-432637191/?originalSubdomain=nz"
-                    target="_blank">
-                    <img src="images/linkedIn.png" alt="linked in logo">
-                </a>
-            </div>
-            <div class="linkLogoBox">
+        <div class="always_flex">
+            <p class="footer_text">If you would like to get in contact please visit my linked in account.</p>
+            <div class="footer_logoBox">
+                <div class="linkLogoBox">
+                    <a href="https://www.linkedin.com/in/brendan-mc-dermott-432637191" target="_blank">
+                        <img src="images/linkedIn.png" alt="linked in logo">
+                    </a>
+                </div>
+                <div class="linkLogoBox">
+                </div>
             </div>
         </div>
     </footer>
 </body>
+<script>
+    let defaults = localStorage.getItem("customValues");
+    let theme = JSON.parse(defaults)
+    let doc = document.getElementById("body")
+    console.log(doc)
+    doc.style.backgroundColor = `rgba(${theme.backgroundL.r}, ${theme.backgroundL.g}, ${theme.backgroundL.b},0.1)`;
+</script>
 
 </html>

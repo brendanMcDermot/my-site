@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <title>Creative Numbers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/homestyle.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/customcontrollerstyle.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/generalMQ.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/home/style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/home/media800.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/home/media1200.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/home/customcontrollerstyle.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/old/style.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/old/homestyle.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/old/stylesheet.css" /> -->
     <script src="js/Actor.js"></script>
     <script src="js/View.js"></script>
     <script src="js/Controller.js"></script>
@@ -30,33 +36,26 @@
 
         <div id="index_titlebox">
             <h1>Creative Numbers</h1>
-            <h2>A Portfolio Site</h2>
+            <h3>A Portfolio Site</h3>
         </div>
-        <!-- <div id="index_exclaimer">
-        <div id="index_exclaimer2">
-            <h2>Under construction</h2>
-            <p>This website is currently under construction. The target for the first full iteration
-                is for the 11th August 2021.
-            </p>
-        </div>
-    </div> -->
+
 
         <div id="index_content">
             <div>
                 <div class="index_panel">
                     <h2>This Site</h2>
-                    <p>Creative numbers is not a dodgy acountant website.. It is infact a portfolio
+                    <p>Creative numbers is a portfolio
                         website for Ara, Institute of Canterbury BICT graduate, Brendan Mc Dermott.
-                        The website serves as a fun way to convey coding ability and motivation.
-                        The home page itself was created intirely in css html and javascript as
-                        an excercise in particle coding. I hope you enjoy exploring the rest of the
-                        website. cd fun! :) </p>
+                        The website serves as a fun way to convey coding ability, character and motivation.
+                        The home page itself was created entirely in CSS HTML and vanilla JavaScript as
+                        an exercise in particle coding. I hope you enjoy exploring the rest of the
+                        website. cd fun!</p>
                 </div>
             </div>
             <div>
                 <div class="index_panel">
                     <div id="theme_controller">
-                        <h2>Customise this Webpage</h2>
+                        <h3>Customise this Webpage</h3>
                         <div class="flex_this">
                             <div>
                                 <div>
@@ -67,7 +66,7 @@
                                 <div class="container_indented">
                                     <div id="background_controller">
                                         <h4>Change the background color of the site.</h4>
-                                        <p>color one</p>
+                                        <p class="color_label">Color one</p>
                                         <div class="always_flex">
                                             <div class="slider_container">
                                                 <input type="range" min="0" max="255" value="0" class="Rgb" id="Rgb1"
@@ -80,7 +79,7 @@
                                             <div id="color_background_one" class="color_sample"></div>
                                         </div>
 
-                                        <p>color two</p>
+                                        <p class="color_label">Color two</p>
                                         <div class="always_flex">
                                             <div class="slider_container">
                                                 <input type="range" min="0" max="255" value="0" class="Rgb" id="Rgb2"
@@ -106,16 +105,15 @@
                                         <button class="theme_button" onclick="changePreTheme('blue')">Blues</button>
                                         <button class="theme_button" onclick="changePreTheme('rain')">Rain</button>
                                         <button class="theme_button" onclick="changePreTheme('neon')">Neon</button>
-                                        <button class="theme_button" onclick="changePreTheme('darkWarmth')">Dark
-                                            warmth</button>
+                                        <button class="theme_button" onclick="changePreTheme('darkWarmth')">Mint</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="container_indented">
                                 <div id="particle_controller">
-                                    <h4>change the colors of the particles.</h4>
+                                    <h4>Change the colors of the particles.</h4>
 
-                                    <p>color one</p>
+                                    <p  class="color_label">Color one</p>
                                     <div class="always_flex">
                                         <div class="slider_container">
                                             <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb1"
@@ -128,7 +126,7 @@
                                         <div id="color_particle_one" class="color_sample"></div>
                                     </div>
 
-                                    <p>color two</p>
+                                    <p class="color_label">Color two</p>
                                     <div class="always_flex">
                                         <div class="slider_container">
                                             <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb2"
@@ -141,7 +139,7 @@
                                         <div id="color_particle_two" class="color_sample"></div>
                                     </div>
 
-                                    <p>color three</p>
+                                    <p class="color_label">Color three</p>
                                     <div class="always_flex">
                                         <div class="slider_container">
                                             <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb3"
@@ -156,7 +154,7 @@
 
 
 
-                                    <p>color four</p>
+                                    <p class="color_label">Color four</p>
                                     <div class="always_flex">
                                         <div class="slider_container">
                                             <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb4"
@@ -171,7 +169,7 @@
 
 
 
-                                    <p>outline color</p>
+                                    <p class="color_label">Outline color</p>
                                     <div class="always_flex">
                                         <div class="slider_container">
                                             <input type="range" min="0" max="255" value="0" class="Rgb" id="pRgb5"
@@ -221,7 +219,7 @@
     </main>
     <footer>
         <div class="always_flex">
-            <p>If you would like to get in contact please visit my linked in account provided with the link below.</p>
+            <p class="footer_text">If you would like to get in contact please visit my linked in account.</p>
             <div class="footer_logoBox">
                 <div class="linkLogoBox">
                     <a href="https://www.linkedin.com/in/brendan-mc-dermott-432637191"
@@ -233,14 +231,7 @@
                 </div>
             </div>
         </div>
-
     </footer>
-    <!-- <script>
-    window.addEventListener("scroll", (event) => {
-    let scroll = this.scrollY;
-    console.log(scroll)
-});
-</script> -->
 </body>
 
 </html>

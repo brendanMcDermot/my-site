@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CN A Winters Knight</title>
+    <title>Creative Numbers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css" />
-    <link rel="stylesheet" type="text/css" href="../CSS/projectsstyle.css" />
-    <script src="../js/Actor.js"></script>
-    <script src="../js/View.js"></script>
-    <script src="../js/Controller.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/generalMQ.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/specificProjects/aWKstyle.css" />
+    <script src="../js/aWintersKnight.js"></script>
+
 </head>
 
 <body>
@@ -26,22 +26,81 @@
     </nav>
 
     <main>
-        <h2>A Winters Knight</h2>
+        <img id="foreground_mountains" src="../images/mountainsForeground.png" alt="">
+
+        <section class="ground_template">
+            <div class="awk_content">
+                <h2>A Winters Knight</h2>
+                <p>I created A Winters Knight as part of my Interactive Media class. This class
+                    concentrated on methodologies and process and each student was able to choose their own
+                    project. I chose to create this game as i wanted to learn more about game engines
+                    and 3D development. </p>
+            </div>
+            <img class="ground_template_img" src="../images/groundTemplate.png" alt="">
+        </section>
+        <section class="ground_template">
+            <p class="breaker_section">loading</p>
+
+            <img class="ground_template_img" src="../images/groundTemplate.png" alt="">
+        </section>
+
+        <section class="ground_template">
+            <div class="awk_content">
+                <h3>The Aims</h3>
+                <p>The aim of this project was to build evertything myself with the exception of
+                    the game engine. Unity was selected as the engine of choice and blender was used
+                    for 3D modelling and animating.
+                </p>
+
+                <img class="awk_image" src="../images/AWK.jpg" alt="">
+
+            </div>
+            <img class="ground_template_img" src="../images/groundTemplate.png" alt="">
+        </section>
+        <section class="ground_template">
+            <p class="breaker_section">loading</p>
+            <img class="ground_template_img" src="../images/groundTemplate.png" alt="">
+        </section>
+
+        <section class="ground_template">
+            <div class="awk_content">
+                <h3>The Process</h3>
+                <p>The development lifecycle envolved the use of scrum for one and the design thinking
+                    methodology. Each iteration user testing was carried out to refine the end product.
+                </p>
+            </div>
+            <img class="ground_template_img" src="../images/groundTemplate.png" alt="">
+        </section>
+        <section class="ground_template">
+            <p class="breaker_section">loading</p>
+
+            <img class="ground_template_img" src="../images/groundTemplate.png" alt="">
+        </section>
+
+        <section class="ground_template">
+            <div class="awk_content">
+                <h3>Things Learnt</h3>
+                <p>Through this project I learned a lot of new skills with blender, and 
+                    aquired a basic introduction to unity. The design thinking methodology really 
+                    helped refine the end product and learning how to animate was a slow but fun
+                    process.
+                </p>
+            </div>
+            <img class="ground_template_img" src="../images/groundTemplate.png" alt="">
+        </section>
 
     </main>
-    <footer>
-        <p>If you would like to get in contact please visit my linked in account provided with the link below.</p>
-        <div class="footer_logoBox">
-            <div class="linkLogoBox">
-                <a href="https://www.linkedin.com/in/brendan-mc-dermott-432637191/?originalSubdomain=nz"
-                    target="_blank">
-                    <img src="../images/linkedIn.png" alt="linked in logo">
-                </a>
-            </div>
-            <div class="linkLogoBox">
-            </div>
-        </div>
-    </footer>
 </body>
+<script>window.onload = function () {
+        const scrollContainer = document.querySelector("main");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            playGame(evt.deltaY)
+        });
+
+    };
+</script>
 
 </html>
