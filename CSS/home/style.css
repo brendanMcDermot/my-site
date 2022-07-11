@@ -78,9 +78,7 @@
     max-width: 800px;
 }
 
-.index_panel > p{
-    padding: 1rem;
-}
+
 
 canvas{
     background: linear-gradient(to left, rgba(0, 0, 50, 1), rgba(0, 1, 0, 1));

@@ -43,6 +43,10 @@ p{
     font-size: 4vw;
     padding: 0.5rem 1rem;
 }
+.small_p{
+    font-size: 1.4rem;
+    padding: 1rem;
+}
 .image_figure{
     font-size: 2.5vw;
     padding:0.3 0.3 1;
