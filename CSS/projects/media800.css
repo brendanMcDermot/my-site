@@ -3,6 +3,9 @@
       margin: 1rem;
       grid-template-columns: auto auto;
     }
+    .grid_labels{
+      font-size: 1rem;
+    }
     main{
       padding: 4rem;
     }

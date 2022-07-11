@@ -22,3 +22,19 @@
 section{
     height: 100vh;
 }
+@media only screen and (min-width: 800px) {
+    #img_cn{
+        margin: 0 auto;
+        max-height: 80vh;
+        width: fit-content;
+    }
+    #responsive_image{
+        vertical-align: middle;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    #cn_top{
+        padding: 0 2rem;
+    }
+  }

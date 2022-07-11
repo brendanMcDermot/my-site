@@ -26,21 +26,21 @@ h1,h2,h3,h4{
 }
 
 h1{
-    font-size: 13vw;
+    font-size: 10vw;
 }
 h2 {
-    font-size: 8vw;
+    font-size: 7vw;
     text-transform: uppercase;
     padding: 1rem 0.5rem;
 }
 h3{
-    font-size: 8vw;
+    font-size: 7vw;
 }
 h4{
     font-size: 4vw;
 }
 p{
-    font-size: 5vw;
+    font-size: 4vw;
     padding: 0.5rem 1rem;
 }
 .image_figure{
